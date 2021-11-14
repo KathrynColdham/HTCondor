@@ -218,11 +218,11 @@ for file in $(cat ${process}_files.txt)
 
 	#writing the commands to be executed in each bash script
 	cat <<EOT >> Jobs_${process}_${channel}_${year}_${region}_${systematic}_${MCOrData}_${NPL}/Job_${process}_${channel}_${year}_${region}_${systematic}_${MCOrData}_${NPL}_${IDX}/sub.sh 
-cd /afs/cern.ch/work/c/coldham/private/tZq_Dilepton_NanoAOD
-source /cvmfs/sft.cern.ch/lcg/views/LCG_96/x86_64-slc6-gcc8-opt/setup.sh
-make
-make clean
-./bin/fulleventselectionMain.exe --mc ${MCInt} -y ${year} -p ${ProcessInt} --npl ${NPLInt} --sr ${SRInt} --sbr ${SBRInt} --zjcr ${ZPlusJetsCRInt} --ttcr ${ttbarCRInt} --sys ${SystematicInt} --channel ${ChannelInt} --dcc 0; sleep 18000;
+#!/bin/bash
+export X509_USER_PROXY=/afs/cern.ch/work/c/coldham/private/HTCondor/x509up_u114218
+voms-proxy-info -all
+voms-proxy-info -all -file /afs/cern.ch/work/c/coldham/private/HTCondor/x509up_u114218
+root -l /afs/cern.ch/work/c/coldham/private/HTCondor/BasicScript.cc
 EOT
 
 	IDX=$((IDX+1))
@@ -233,13 +233,14 @@ done
 #creating and writing to the .sub file
 cat <<"EOT" >> condor_${process}_${channel}_${year}_${region}_${systematic}_${MCOrData}_${NPL}.sub
 executable = $(filename)
-arguments = $Fp(filename) $(ClusterID) $(ProcId)
+Proxy_path = /afs/cern.ch/work/c/coldham/private/HTCondor/x509up_u114218
+arguments = $(Proxy_path) $Fp(filename) $(ClusterID) $(ProcId)
 output = $Fp(filename)file.stdout
 error = $Fp(filename)file.stderr
 log = $Fp(filename)file.log
 EOT
 
 cat <<EOT >> condor_${process}_${channel}_${year}_${region}_${systematic}_${MCOrData}_${NPL}.sub
-queue filename matching (Jobs_${process}_${channel}_${year}_${region}_${systematic}_${MCOrData}_${NPL}/Jobs_${process}_${channel}_${year}_${region}_${systematic}_${MCOrData}_${NPL}*/*.sh)
+queue filename matching (Jobs_${process}_${channel}_${year}_${region}_${systematic}_${MCOrData}_${NPL}/Job_${process}_${channel}_${year}_${region}_${systematic}_${MCOrData}_${NPL}*/*.sh)
 EOT
 
