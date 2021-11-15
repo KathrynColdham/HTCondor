@@ -202,9 +202,9 @@ fi
 
 
 #writing the names of all input files to a text file
-dasgoclient -query="file dataset=$DATASET" > ${process}_files.txt
+dasgoclient -query="file dataset=$DATASET" > ${process}_files_${year}.txt
 
-echo ${process}_files.txt
+echo ${process}_files_${year}.txt
 
 
 #creating a bash script for the condor submission
@@ -216,7 +216,18 @@ cat <<EOT >> Jobs/Job_${process}_${channel}_${year}_${region}_${systematic}_${MC
 export X509_USER_PROXY=/afs/cern.ch/work/c/coldham/private/HTCondor/x509up_u114218
 voms-proxy-info -all
 voms-proxy-info -all -file /afs/cern.ch/work/c/coldham/private/HTCondor/x509up_u114218
-root -l /afs/cern.ch/work/c/coldham/private/HTCondor/BasicScript.cc
+
+if [ !-d /afs/cern.ch/work/c/coldham/private/HTCondor/tZq_Dilepton_NanoAOD ]
+then
+	git clone https://github.com/brunel-physics/tZq_Dilepton_NanoAOD
+fi
+
+cd /afs/cern.ch/work/c/coldham/private/HTCondor/tZq_Dilepton_NanoAOD
+source /cvmfs/sft.cern.ch/lcg/views/LCG_96/x86_64-slc6-gcc8-opt/setup.sh
+make
+make clean
+./bin/fulleventselectionMain.exe --mc ${MCInt} -y ${year} -p ${ProcessInt} --npl ${NPLInt} --sr ${SRInt} --sbr ${SBRInt} --zjcr ${ZPlusJetsCRInt} --ttcr ${ttbarCRInt} --sys ${SystematicInt} --channel ${ChannelInt} --dcc 0; sleep 18000;
+
 EOT
 
 
