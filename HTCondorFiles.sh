@@ -207,17 +207,11 @@ dasgoclient -query="file dataset=$DATASET" > ${process}_files.txt
 echo ${process}_files.txt
 
 
-#creating a bash script for each input file
-mkdir -p Jobs_${process}_${channel}_${year}_${region}_${systematic}_${MCOrData}_${NPL}
+#creating a bash script for the condor submission
+mkdir -p Jobs/Job_${process}_${channel}_${year}_${region}_${systematic}_${MCOrData}_${NPL}
 
-IDX=0
-
-for file in $(cat ${process}_files.txt)
-
-	do mkdir -p Jobs_${process}_${channel}_${year}_${region}_${systematic}_${MCOrData}_${NPL}/Job_${process}_${channel}_${year}_${region}_${systematic}_${MCOrData}_${NPL}_${IDX}
-
-	#writing the commands to be executed in each bash script
-	cat <<EOT >> Jobs_${process}_${channel}_${year}_${region}_${systematic}_${MCOrData}_${NPL}/Job_${process}_${channel}_${year}_${region}_${systematic}_${MCOrData}_${NPL}_${IDX}/sub.sh 
+#writing the commands to be executed in each bash script
+cat <<EOT >> Jobs/Job_${process}_${channel}_${year}_${region}_${systematic}_${MCOrData}_${NPL}/sub.sh 
 #!/bin/bash
 export X509_USER_PROXY=/afs/cern.ch/work/c/coldham/private/HTCondor/x509up_u114218
 voms-proxy-info -all
@@ -225,9 +219,6 @@ voms-proxy-info -all -file /afs/cern.ch/work/c/coldham/private/HTCondor/x509up_u
 root -l /afs/cern.ch/work/c/coldham/private/HTCondor/BasicScript.cc
 EOT
 
-	IDX=$((IDX+1))
-
-done
 
 
 #creating and writing to the .sub file
@@ -241,6 +232,6 @@ log = $Fp(filename)file.log
 EOT
 
 cat <<EOT >> condor_${process}_${channel}_${year}_${region}_${systematic}_${MCOrData}_${NPL}.sub
-queue filename matching (Jobs_${process}_${channel}_${year}_${region}_${systematic}_${MCOrData}_${NPL}/Job_${process}_${channel}_${year}_${region}_${systematic}_${MCOrData}_${NPL}*/*.sh)
+queue filename matching (Jobs/Job_${process}_${channel}_${year}_${region}_${systematic}_${MCOrData}_${NPL}/*.sh)
 EOT
 

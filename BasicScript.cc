@@ -18,11 +18,7 @@ TxtFileListToVecStr(const std::string f)
     while (std::getline(infile, line))
     {
 
-        if (i > 0)
-        {
-            break;
-        }
-        i++;
+	i++;
 
         line.erase(std::remove(line.begin(), line.end(), '\n'), line.end());
         line.erase(std::remove(line.begin(), line.end(), '\r'), line.end());
@@ -52,12 +48,15 @@ TxtFileListToVecStr(const std::string f)
 //main function
 void BasicScript(){
 
-	std::string inputFile = "/afs/cern.ch/work/c/coldham/private/HTCondor/tZq_signal_files.txt";
+	std::string inputFile = "/afs/cern.ch/work/c/coldham/private/HTCondor/tZq_scaleup_files.txt";
 
 	std::vector<std::string> file_locations = TxtFileListToVecStr(inputFile);
 	
 	std::cout << "file_locations.size() = " << file_locations.size() << std::endl;
-	std::cout << "file_locations.at(0) = " << file_locations.at(0) << std::endl;
+
+	for(int i = 0; i < file_locations.size(); i++){
+		std::cout << "file_locations.at(i) = " << file_locations.at(i) << std::endl;
+	}
 
 	ROOT::RDataFrame d("Events", file_locations);
 
