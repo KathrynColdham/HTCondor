@@ -240,6 +240,7 @@ arguments = $(Proxy_path) $Fp(filename) $(ClusterID) $(ProcId)
 output = $Fp(filename)file.stdout
 error = $Fp(filename)file.stderr
 log = $Fp(filename)file.log
++JobFlavour = "nextweek"
 EOT
 
 cat <<EOT >> condor_${process}_${channel}_${year}_${region}_${systematic}_${MCOrData}_${NPL}.sub
