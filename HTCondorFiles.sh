@@ -830,6 +830,718 @@ then
 		echo 'Check the process name'
 		exit
 	fi
+
+elif [ $year = '2017' ]
+then
+	if [ $process = 'tZq_signal' ]
+        then
+                DATASET=/tZq_ll_4f_ckm_NLO_TuneCP5_PSweights_13TeV-amcatnlo-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_new_pmx_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=0
+
+	elif [ $process = 'ZPlusJets_M50_aMCatNLO' ]
+        then
+                DATASET=/DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_new_pmx_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=3
+
+	elif [ $process = 'ZPlusJets_M50_aMCatNLO_ext' ]
+        then
+                DATASET=/DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_new_pmx_102X_mc2017_realistic_v8_ext1-v1/NANOAODSIM
+
+                ProcessInt=4
+
+	elif [ $process = 'ttbar_2l2nu' ]
+        then
+                DATASET=/TTTo2L2Nu_TuneCP5_PSweights_13TeV-powheg-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_new_pmx_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=28
+
+	elif [ $process = 'ttbar_TTToHadronic' ]
+        then
+                DATASET=/TTToHadronic_TuneCP5_PSweights_13TeV-powheg-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_new_pmx_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=31
+
+        elif [ $process = 'ttbar_TTToSemileptonic' ]
+        then
+                DATASET=/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=33
+
+        elif [ $process = 'ttbar_atMCaNLO' ]
+        then
+                DATASET=35
+
+                ProcessInt=/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_new_pmx_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+	elif [ $process = 'SingleTop_tchannel_top' ]
+        then
+                DATASET=/ST_t-channel_top_4f_InclusiveDecays_TuneCP5_PSweights_13TeV-powheg-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=38
+
+        elif [ $process = 'SingleTop_tchannel_antitop' ]
+        then
+                DATASET=/ST_t-channel_antitop_4f_InclusiveDecays_TuneCP5_PSweights_13TeV-powheg-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=41
+
+        elif [ $process = 'SingleTop_schannel' ]
+        then
+                DATASET=/ST_s-channel_4f_leptonDecays_TuneCP5_13TeV-amcatnlo-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=44
+
+	elif [ $process = 'TT_2l2nu_hdampUP' ]
+        then
+                DATASET=/TTTo2L2Nu_hdampUP_TuneCP5_PSweights_13TeV-powheg-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_new_pmx_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=49
+
+        elif [ $process = 'TT_2l2nu_hdampDOWN' ]
+        then
+                DATASET=/TTTo2L2Nu_hdampDOWN_TuneCP5_PSweights_13TeV-powheg-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_new_pmx_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=52
+
+        elif [ $process = 'TTToHadronic_hdampUP' ]
+        then
+                DATASET=/TTToHadronic_hdampUP_TuneCP5_PSweights_13TeV-powheg-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=55
+
+	elif [ $process = 'TTToHadronic_hdampDOWN' ]
+        then
+                DATASET=/TTToHadronic_hdampDOWN_TuneCP5_PSweights_13TeV-powheg-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_new_pmx_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=56
+
+        elif [ $process = 'TTToSemileptonic_hdampUP' ]
+        then
+                DATASET=/TTToSemiLeptonic_hdampUP_TuneCP5_PSweights_13TeV-powheg-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_new_pmx_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=57
+
+        elif [ $process = 'TTToSemileptonic_hdampDOWN' ]
+        then
+                DATASET=/TTToSemiLeptonic_hdampDOWN_TuneCP5_PSweights_13TeV-powheg-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=58
+
+	elif [ $process = 'TTToSemileptonic_hdampDOWN_ext' ]
+        then
+                DATASET=/TTToSemiLeptonic_hdampDOWN_TuneCP5_PSweights_13TeV-powheg-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_EXT_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=59
+
+        elif [ $process = 'SingleTop_tchannel_top_hdampUP' ]
+        then
+                DATASET=/ST_t-channel_top_4f_hdampup_InclusiveDecays_TuneCP5_PSweights_13TeV-powheg-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=60
+
+        elif [ $process = 'SingleTop_tchannel_top_hdampDOWN' ]
+        then
+                DATASET=/ST_t-channel_top_4f_hdampdown_InclusiveDecays_TuneCP5_PSweights_13TeV-powheg-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=61
+
+	elif [ $process = 'SingleTop_tchannel_antitop_hdampUP' ]
+        then
+                DATASET=/ST_t-channel_antitop_4f_hdampup_InclusiveDecays_TuneCP5_PSweights_13TeV-powheg-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=62
+
+        elif [ $process = 'SingleTop_tchannel_antitop_hdampDOWN' ]
+        then
+                DATASET=/ST_t-channel_antitop_4f_hdampdown_InclusiveDecays_TuneCP5_PSweights_13TeV-powheg-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=63
+
+        elif [ $process = 'SingleTop_tW' ]
+        then
+                DATASET=/ST_tW_top_5f_inclusiveDecays_TuneCP5_PSweights_13TeV-powheg-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_new_pmx_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=71
+
+	elif [ $process = 'SingleTop_tbarW' ]
+        then
+                DATASET=/ST_tW_antitop_5f_inclusiveDecays_TuneCP5_PSweights_13TeV-powheg-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=74
+
+        elif [ $process = 'SingleTop_tHq' ]
+        then
+                DATASET=/THQ_ctcvcp_4f_Hincl_13TeV_madgraph_pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=77
+
+        elif [ $process = 'SingleTop_tZq_W_lept_Z_had' ]
+        then
+                DATASET=/tZq_W_lept_Z_hadron_4f_ckm_NLO_13TeV_amcatnlo_pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=78
+
+	elif [ $process = 'SingleTop_tWZ_tWll' ]
+        then
+                DATASET=/ST_tWll_5f_LO_TuneCP5_PSweights_13TeV-madgraph-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8_ext1-v1/NANOAODSIM
+
+                ProcessInt=79
+
+        elif [ $process = 'VV_ZZTo2l2nu' ]
+        then
+                DATASET=/ZZTo2L2Nu_13TeV_powheg_pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=80
+
+        elif [ $process = 'VV_ZZTo2l2Q' ]
+        then
+                DATASET=/ZZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=83
+
+	elif [ $process = 'VV_ZZTo4L' ]
+        then
+                DATASET=/ZZTo4L_13TeV_powheg_pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_new_pmx_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=84
+
+        elif [ $process = 'VV_WZTo2l2Q' ]
+        then
+                DATASET=/WZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=86
+
+        elif [ $process = 'VV_WZTo3lNu' ]
+        then
+                DATASET=/WZTo3LNu_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_new_pmx_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=87
+
+        elif [ $process = 'VV_WZTo1l1Nu2Q' ]
+        then
+                DATASET=/WZTo1L1Nu2Q_13TeV_amcatnloFXFX_madspin_pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=89
+
+        elif [ $process = 'VV_WWTo2l2Nu' ]
+        then
+                DATASET=/WWTo2L2Nu_NNPDF31_TuneCP5_PSweights_13TeV-powheg-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8_ext1-v1/NANOAODSIM
+
+                ProcessInt=90
+
+	elif [ $process = 'VV_WWToLNuQQ' ]
+        then
+                DATASET=/WWToLNuQQ_NNPDF31_TuneCP5_PSweights_13TeV-powheg-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8_ext1-v1/NANOAODSIM
+
+                ProcessInt=91
+
+	elif [ $process = 'VV_WGToLNuG' ]
+        then
+                DATASET=/WGToLNuG_TuneCP5_13TeV-madgraphMLM-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=93
+	
+	elif [ $process = 'VV_ZGToLLG' ]
+        then
+                DATASET=94
+
+                ProcessInt=/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+        elif [ $process = 'VVV_WWWTo4F' ]
+        then
+                DATASET=/WWW_4F_TuneCP5_13TeV-amcatnlo-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=96
+
+        elif [ $process = 'VVV_WWWTo4F_ext' ]
+        then
+                DATASET=/WWW_4F_TuneCP5_13TeV-amcatnlo-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_EXT_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=97
+
+	elif [ $process = 'VVV_WWZTo4F' ]
+        then
+                DATASET=/WWZ_4F_TuneCP5_13TeV-amcatnlo-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=98
+
+        elif [ $process = 'VVV_WWZTo4F_ext' ]
+        then
+                DATASET=/WWZ_4F_TuneCP5_13TeV-amcatnlo-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_EXT_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=99
+
+        elif [ $process = 'VVV_WZZ' ]
+        then
+                DATASET=/WZZ_TuneCP5_13TeV-amcatnlo-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=100
+
+	elif [ $process = 'VVV_WZZ_ext' ]
+        then
+                DATASET=/WZZ_TuneCP5_13TeV-amcatnlo-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_EXT_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=101
+
+        elif [ $process = 'VVV_ZZZ' ]
+        then
+                DATASET=/ZZZ_TuneCP5_13TeV-amcatnlo-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=102
+
+        elif [ $process = 'VVV_ZZZ_ext' ]
+        then
+                DATASET=/ZZZ_TuneCP5_13TeV-amcatnlo-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_EXT_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=103
+	
+	elif [ $process = 'WPlusJets' ]
+        then
+                DATASET=/WJetsToLNu_TuneCP5_13TeV-madgraphMLM-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=104
+
+        elif [ $process = 'WPlusJets_ext' ]
+        then
+                DATASET=/WJetsToLNu_TuneCP5_13TeV-madgraphMLM-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_EXT_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=105
+
+        elif [ $process = 'ttbarV_ttWJetsToLNu' ]
+        then
+                DATASET=/TTWJetsToLNu_TuneCP5_PSweights_13TeV-amcatnloFXFX-madspin-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_new_pmx_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=106
+
+	elif [ $process = 'ttbarV_ttWJetsToQQ' ]
+        then
+                DATASET=/TTWJetsToQQ_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/NANOAODSIM
+                
+                ProcessInt=108
+
+	elif [ $process = 'ttbarV_ttZToLL' ]
+        then
+                DATASET=/TTZToLL_M-1to10_TuneCP5_13TeV-amcatnlo-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/NANOAODSIM
+                
+                ProcessInt=109
+
+	elif [ $process = 'ttbarV_ttZToLL_ext' ]
+        then
+                DATASET=/TTZToLL_M-1to10_TuneCP5_13TeV-amcatnlo-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_EXT_102X_mc2017_realistic_v8-v1/NANOAODSIM
+                
+                ProcessInt=110
+
+	elif [ $process = 'ttbarV_ttZToLLNuNu' ]
+        then
+                DATASET=/TTZToLLNuNu_M-10_TuneCP5_13TeV-amcatnlo-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/NANOAODSIM
+                
+                ProcessInt=111
+
+	elif [ $process = 'ttbarV_ttZToLLNuNu_ext' ]
+        then
+                DATASET=/TTZToLLNuNu_M-10_TuneCP5_13TeV-amcatnlo-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_EXT_102X_mc2017_realistic_v8-v1/NANOAODSIM
+                
+                ProcessInt=112
+
+        elif [ $process = 'ttbarV_ttZToQQ' ]
+        then
+                DATASET=/TTZToQQ_TuneCP5_13TeV-amcatnlo-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=114
+
+        elif [ $process = 'ttbarV_ttZToQQ_ext' ]
+        then
+                DATASET=/TTZToQQ_TuneCP5_13TeV-amcatnlo-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8_ext1-v1/NANOAODSIM
+
+                ProcessInt=115
+
+        elif [ $process = 'ttbarV_ttHTobb' ]
+        then
+                DATASET=/ttHTobb_M125_TuneCP5_13TeV-powheg-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_new_pmx_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=116
+
+	elif [ $process = 'ttbarV_ttHToNonbb' ]
+        then
+                DATASET=/ttHToNonbb_M125_TuneCP5_13TeV-powheg-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_new_pmx_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=118
+	else
+                echo 'Check the process name'
+                exit
+        fi
+
+elif [ $year = '2017' ]
+then
+	if [ $process = 'tZq_signal' ]
+        then
+                DATASET=/tZq_ll_4f_ckm_NLO_TuneCP5_13TeV-madgraph-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21_ext1-v1/NANOAODSIM
+                ProcessInt=0
+
+	elif [ $process = 'ZPlusJets_M50_aMCatNLO' ]
+        then
+                DATASET=/DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/NANOAODSIM
+               
+		ProcessInt=3
+
+	elif [ $process = 'ZPlusJets_M50_aMCatNLO_ext' ]
+        then
+                DATASET=/DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21_ext2-v1/NANOAODSIM
+               
+                ProcessInt=4
+
+	elif [ $process = 'ZPlusJets_M10To50_Madgraph' ]
+        then
+                DATASET=/DYJetsToLL_M-10to50_TuneCP5_13TeV-madgraphMLM-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/NANOAODSIM
+               
+                ProcessInt=9
+
+	elif [ $process = 'ZPlusJets_M10To50_Madgraph_ext' ]
+        then
+                DATASET=/DYJetsToLL_M-10to50_TuneCP5_13TeV-madgraphMLM-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21_ext1-v1/NANOAODSIM
+               
+                ProcessInt=10
+
+	elif [ $process = 'ttbar_2l2nu' ]
+        then
+                DATASET=/TTTo2L2Nu_TuneCP5_13TeV-powheg-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/NANOAODSIM
+               
+                ProcessInt=28
+
+	elif [ $process = 'ttbar_TTToHadronic' ]
+        then
+                DATASET=/TTToHadronic_TuneCP5_13TeV-powheg-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/NANOAODSIM
+               
+                ProcessInt=31
+
+        elif [ $process = 'ttbar_TTToHadronic_ext' ]
+        then
+                DATASET=/TTToHadronic_TuneCP5_13TeV-powheg-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21_ext2-v1/NANOAODSIM
+
+                ProcessInt=32
+
+        elif [ $process = 'ttbar_TTToSemileptonic' ]
+        then
+                DATASET=/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/NANOAODSIM
+
+                ProcessInt=33
+
+        elif [ $process = 'ttbar_TTToSemileptonic_ext' ]
+        then
+                DATASET=/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21_ext3-v1/NANOAODSIM
+
+                ProcessInt=34
+        
+        elif [ $process = 'ttbar_atMCaNLO' ]
+        then
+                DATASET=/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21_ext1-v1/NANOAODSIM
+
+                ProcessInt=35
+
+	elif [ $process = 'ttbar_atMCaNLO_ext' ]
+        then
+                DATASET=/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21_ext2-v1/NANOAODSIM
+               
+                ProcessInt=36
+
+        elif [ $process = 'SingleTop_tchannel_top' ]
+        then
+                DATASET=/ST_t-channel_top_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/NANOAODSIM
+
+                ProcessInt=38
+
+        elif [ $process = 'SingleTop_tchannel_antitop' ]
+        then
+                DATASET=/ST_t-channel_antitop_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/NANOAODSIM
+
+                ProcessInt=41
+
+        elif [ $process = 'SingleTop_schannel' ]
+        then
+                DATASET=/ST_s-channel_4f_leptonDecays_TuneCP5_13TeV-amcatnlo-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/NANOAODSIM
+
+                ProcessInt=44
+        
+        elif [ $process = 'TT_2l2nu_hdampUP' ]
+        then
+                DATASET=/TTTo2L2Nu_hdampUP_TuneCP5_13TeV-powheg-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/NANOAODSIM
+
+                ProcessInt=49
+
+	elif [ $process = 'TT_2l2nu_hdampUP_ext1' ]
+        then
+                DATASET=/TTTo2L2Nu_hdampUP_TuneCP5_13TeV-powheg-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21_ext1-v1/NANOAODSIM
+               
+                ProcessInt=50
+
+        elif [ $process = 'TT_2l2nu_hdampDOWN' ]
+        then
+                DATASET=/TTTo2L2Nu_hdampDOWN_TuneCP5_13TeV-powheg-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/NANOAODSIM
+
+                ProcessInt=52
+
+        elif [ $process = 'TT_2l2nu_hdampDOWN_ext1' ]
+        then
+                DATASET=/TTTo2L2Nu_hdampDOWN_TuneCP5_13TeV-powheg-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21_ext1-v1/NANOAODSIM
+
+                ProcessInt=53
+
+        elif [ $process = 'TT_2l2nu_hdampDOWN_ext2' ]
+        then
+                DATASET=/TTTo2L2Nu_hdampDOWN_TuneCP5_13TeV-powheg-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21_ext2-v1/NANOAODSIM
+
+                ProcessInt=54
+        
+        elif [ $process = 'TTToHadronic_hdampUP' ]
+        then
+                DATASET=/TTToHadronic_hdampUP_TuneCP5_13TeV-powheg-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/NANOAODSIM
+
+                ProcessInt=55
+
+	elif [ $process = 'TTToHadronic_hdampDOWN' ]
+        then
+                DATASET=/TTToHadronic_hdampDOWN_TuneCP5_13TeV-powheg-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/NANOAODSIM
+               
+                ProcessInt=56
+
+        elif [ $process = 'TTToSemileptonic_hdampUP' ]
+        then
+                DATASET=/TTToSemiLeptonic_hdampUP_TuneCP5_13TeV-powheg-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/NANOAODSIM
+
+                ProcessInt=57
+
+        elif [ $process = 'TTToSemileptonic_hdampDOWN' ]
+        then
+                DATASET=/TTToSemiLeptonic_hdampDOWN_TuneCP5_13TeV-powheg-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/NANOAODSIM
+
+                ProcessInt=58
+
+        elif [ $process = 'SingleTop_tchannel_top_hdampUP' ]
+        then
+                DATASET=/ST_t-channel_top_4f_hdampup_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/NANOAODSIM
+
+                ProcessInt=60
+        
+        elif [ $process = 'SingleTop_tchannel_top_hdampDOWN' ]
+        then
+                DATASET=/ST_t-channel_top_4f_hdampdown_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/NANOAODSIM
+
+                ProcessInt=61
+
+	elif [ $process = 'SingleTop_tchannel_antitop_hdampUP' ]
+        then
+                DATASET=/ST_t-channel_antitop_4f_hdampup_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/NANOAODSIM
+               
+                ProcessInt=62
+
+        elif [ $process = 'SingleTop_tchannel_antitop_hdampDOWN' ]
+        then
+                DATASET=/ST_t-channel_antitop_4f_hdampdown_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/NANOAODSIM
+
+                ProcessInt=63
+
+        elif [ $process = 'SingleTop_tW' ]
+        then
+                DATASET=/ST_tW_top_5f_inclusiveDecays_TuneCP5_13TeV-powheg-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21_ext1-v1/NANOAODSIM
+
+                ProcessInt=71
+
+        elif [ $process = 'SingleTop_tbarW' ]
+        then
+                DATASET=/ST_tW_antitop_5f_inclusiveDecays_TuneCP5_13TeV-powheg-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21_ext1-v1/NANOAODSIM
+
+                ProcessInt=74
+        
+        elif [ $process = 'SingleTop_tHq' ]
+        then
+                DATASET=/THQ_ctcvcp_4f_Hincl_13TeV_madgraph_pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/NANOAODSIM
+
+                ProcessInt=77
+
+	elif [ $process = 'SingleTop_tZq_W_lept_Z_had' ]
+        then
+                DATASET=/tZq_Zhad_Wlept_4f_ckm_NLO_TuneCP5_PSweights_13TeV-amcatnlo-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/NANOAODSIM
+
+                ProcessInt=78
+
+        elif [ $process = 'SingleTop_tWZ_tWll' ]
+        then
+                DATASET=/ST_tWll_5f_LO_TuneCP5_PSweights_13TeV-madgraph-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21_ext1-v1/NANOAODSIM
+
+                ProcessInt=79
+
+        elif [ $process = 'VV_ZZTo2l2nu_ext1' ]
+        then
+                DATASET=/ZZTo2L2Nu_TuneCP5_13TeV_powheg_pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21_ext1-v1/NANOAODSIM
+
+                ProcessInt=81
+
+	elif [ $process = 'VV_ZZTo2l2nu_ext2' ]
+        then
+                DATASET=/ZZTo2L2Nu_TuneCP5_13TeV_powheg_pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21_ext2-v1/NANOAODSIM
+
+                ProcessInt=82
+
+        elif [ $process = 'VV_ZZTo2l2Q' ]
+        then
+                DATASET=/ZZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/NANOAODSIM
+
+                ProcessInt=83
+
+        elif [ $process = 'VV_ZZTo4L' ]
+        then
+                DATASET=/ZZTo4L_TuneCP5_13TeV_powheg_pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21_ext1-v1/NANOAODSIM
+
+                ProcessInt=84
+
+	elif [ $process = 'VV_ZZTo4L_ext' ]
+        then
+                DATASET=/ZZTo4L_TuneCP5_13TeV_powheg_pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21_ext2-v1/NANOAODSIM
+
+                ProcessInt=85
+
+        elif [ $process = 'VV_WZTo2l2Q' ]
+        then
+                DATASET=/WZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/NANOAODSIM
+
+                ProcessInt=86
+
+	elif [ $process = 'VV_WZTo3lNu' ]
+        then
+                DATASET=/WZTo3LNu_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/NANOAODSIM
+
+                ProcessInt=87
+
+        elif [ $process = 'VV_WZTo3lNu_ext' ]
+        then
+                DATASET=/WZTo3LNu_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21_ext1-v1/NANOAODSIM
+
+                ProcessInt=88
+
+	elif [ $process = 'VV_WZTo1l1Nu2Q' ]
+        then
+                DATASET=/WZTo1L1Nu2Q_13TeV_amcatnloFXFX_madspin_pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/NANOAODSIM
+
+                ProcessInt=89
+
+	elif [ $process = 'VV_WWTo2l2Nu' ]
+        then
+                DATASET=/WWTo2L2Nu_NNPDF31_TuneCP5_13TeV-powheg-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/NANOAODSIM
+
+                ProcessInt=90
+
+	elif [ $process = 'VV_WWToLNuQQ' ]
+        then
+                DATASET=/WWToLNuQQ_NNPDF31_TuneCP5_13TeV-powheg-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/NANOAODSIM
+
+                ProcessInt=91
+
+        elif [ $process = 'VV_WGToLNuG' ]
+        then
+                DATASET=/WGToLNuG_TuneCP5_13TeV-madgraphMLM-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/NANOAODSIM
+
+                ProcessInt=93
+
+        elif [ $process = 'VV_ZGToLLG' ]
+        then
+                DATASET=/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21_ext1-v1/NANOAODSIM
+
+                ProcessInt=94
+
+	elif [ $process = 'VV_ZGToLLG_ext' ]
+        then
+                DATASET=/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21_ext2-v1/NANOAODSIM
+
+                ProcessInt=95
+
+        elif [ $process = 'VVV_WWWTo4F' ]
+        then
+                DATASET=/WWW_4F_TuneCP5_13TeV-amcatnlo-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21_ext1-v1/NANOAODSIM
+
+                ProcessInt=96
+
+        elif [ $process = 'VVV_WWZTo4F' ]
+        then
+                DATASET=/WWZ_TuneCP5_13TeV-amcatnlo-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21_ext1-v1/NANOAODSIM
+
+                ProcessInt=98
+
+	elif [ $process = 'VVV_WZZ' ]
+        then
+                DATASET=/WZZ_TuneCP5_13TeV-amcatnlo-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21_ext1-v1/NANOAODSIM
+
+                ProcessInt=100
+
+        elif [ $process = 'VVV_ZZZ' ]
+        then
+                DATASET=/ZZZ_TuneCP5_13TeV-amcatnlo-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_102X_mc2017_realistic_v8-v1/NANOAODSIM
+
+                ProcessInt=102
+
+        elif [ $process = 'WPlusJets' ]
+        then
+                DATASET=/WJetsToLNu_TuneCP5_13TeV-madgraphMLM-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/NANOAODSIM
+
+                ProcessInt=104
+
+	elif [ $process = 'ttbarV_ttWJetsToLNu' ]
+        then
+                DATASET=/TTWJetsToLNu_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21_ext1-v1/NANOAODSIM
+
+                ProcessInt=106
+
+        elif [ $process = 'ttbarV_ttWJetsToQQ' ]
+        then
+                DATASET=/TTWJetsToQQ_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/NANOAODSIM
+
+                ProcessInt=108
+
+	elif [ $process = 'ttbarV_ttZToLL' ]
+        then
+                DATASET=/TTZToLL_M-1to10_TuneCP5_13TeV-amcatnlo-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/NANOAODSIM
+
+                ProcessInt=109
+
+        elif [ $process = 'ttbarV_ttZToLLNuNu' ]
+        then
+                DATASET=/TTZToLLNuNu_M-10_TuneCP5_13TeV-amcatnlo-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21_ext1-v1/NANOAODSIM
+
+                ProcessInt=111
+
+	elif [ $process = 'ttbarV_ttZToQQ' ]
+        then
+                DATASET=/TTZToQQ_TuneCP5_13TeV-amcatnlo-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/NANOAODSIM
+
+                ProcessInt=114
+
+	elif [ $process = 'ttbarV_ttZToQQ_ext' ]
+        then
+                DATASET=/TTZToQQ_TuneCP5_13TeV-amcatnlo-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21_ext1-v1/NANOAODSIM
+
+                ProcessInt=115
+
+	elif [ $process = 'ttbarV_ttHTobb' ]
+        then
+                DATASET=/ttHTobb_M125_TuneCP5_13TeV-powheg-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21_ext1-v1/NANOAODSIM
+
+                ProcessInt=116
+
+	elif [ $process = 'ttbarV_ttHTobb_ext' ]
+        then
+                DATASET=/ttHTobb_M125_TuneCP5_13TeV-powheg-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_EXT_102X_upgrade2018_realistic_v21-v1/NANOAODSIM
+
+                ProcessInt=117
+
+	elif [ $process = 'ttbarV_ttHToNonbb' ]
+        then
+                DATASET=/ttHToNonbb_M125_TuneCP5_13TeV-powheg-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/NANOAODSIM
+
+                ProcessInt=118
+
+	fi
+
 else
 	echo 'Check the year'
 	exit
@@ -859,6 +1571,7 @@ then
 fi
 
 cd /afs/cern.ch/work/c/coldham/private/HTCondor/tZq_Dilepton_NanoAOD
+pwd
 source /cvmfs/sft.cern.ch/lcg/views/LCG_96/x86_64-slc6-gcc8-opt/setup.sh
 make
 make clean
@@ -870,7 +1583,7 @@ EOT
 
 #creating and writing to the .sub file
 cat <<"EOT" >> condor_${process}_${channel}_${year}_${region}_${systematic}_${MCOrData}_${NPL}.sub
-executable = $(filename)
+executable = $(filename) 
 Proxy_path = /afs/cern.ch/work/c/coldham/private/HTCondor/x509up_u114218
 arguments = $(Proxy_path) $Fp(filename) $(ClusterID) $(ProcId)
 output = $Fp(filename)file.stdout
