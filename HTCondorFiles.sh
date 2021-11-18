@@ -172,7 +172,7 @@ fi
 #getting dataset info from the CMS data aggregation service
 if [ $year = '2016' ]
 then
-	if [ $process = 'tZq_signal' ]
+	if [ $process = 'tZq' ]
 	then
 		DATASET=/tZq_ll_4f_ckm_NLO_TuneCP5_PSweights_13TeV-amcatnlo-pythia8/RunIISummer16NanoAODv7-PUMoriond17_Nano02Apr2020_102X_mcRun2_asymptotic_v8-v1/NANOAODSIM
 
@@ -833,7 +833,7 @@ then
 
 elif [ $year = '2017' ]
 then
-	if [ $process = 'tZq_signal' ]
+	if [ $process = 'tZq' ]
         then
                 DATASET=/tZq_ll_4f_ckm_NLO_TuneCP5_PSweights_13TeV-amcatnlo-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_new_pmx_102X_mc2017_realistic_v8-v1/NANOAODSIM
 
@@ -1175,7 +1175,7 @@ then
 
 elif [ $year = '2017' ]
 then
-	if [ $process = 'tZq_signal' ]
+	if [ $process = 'tZq' ]
         then
                 DATASET=/tZq_ll_4f_ckm_NLO_TuneCP5_13TeV-madgraph-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21_ext1-v1/NANOAODSIM
                 ProcessInt=0
@@ -1572,10 +1572,12 @@ fi
 
 cd /afs/cern.ch/work/c/coldham/private/HTCondor/tZq_Dilepton_NanoAOD
 pwd
+ls -al
+ls -lR bin
 source /cvmfs/sft.cern.ch/lcg/views/LCG_96/x86_64-slc6-gcc8-opt/setup.sh
-make
 make clean
-./bin/fulleventselectionMain.exe --mc ${MCInt} -y ${year} -p ${ProcessInt} --npl ${NPLInt} --sr ${SRInt} --sbr ${SBRInt} --zjcr ${ZPlusJetsCRInt} --ttcr ${ttbarCRInt} --sys ${SystematicInt} --channel ${ChannelInt} --dcc 0; sleep 18000;
+make 
+./bin/fulleventselectionMain.exe --mc ${MCInt} -y ${year} -p ${ProcessInt} --npl ${NPLInt} --sr ${SRInt} --sbr ${SBRInt} --zjcr ${ZPlusJetsCRInt} --ttcr ${ttbarCRInt} --sys ${SystematicInt} --channel ${ChannelInt} --dcc 0
 
 EOT
 
