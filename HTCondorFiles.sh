@@ -829,268 +829,247 @@ then
 	elif [ $process = 'Data_DoubleEGRunB' ]
         then
 
-                DATASET=
+                DATASET=/DoubleEG/Run2016B-22Aug2018ver2-v1/NANOAOD
 
                 ProcessInt=121
 
 	elif [ $process = 'Data_DoubleEGRunC' ]
         then
 
-                DATASET=
+                DATASET=/DoubleEG/Run2016C-Nano25Oct2019-v1/NANOAOD
 
                 ProcessInt=122
 
 	elif [ $process = 'Data_DoubleEGRunD' ]
         then
 
-                DATASET=
+                DATASET=/DoubleEG/Run2016D-Nano25Oct2019-v1/NANOAOD
 
                 ProcessInt=123
 
 	elif [ $process = 'Data_DoubleEGRunE' ]
         then
 
-                DATASET=
+                DATASET=/DoubleEG/Run2016E-Nano25Oct2019-v1/NANOAOD
 
                 ProcessInt=124
 
         elif [ $process = 'Data_DoubleEGRunF' ]
         then
 
-                DATASET=
+                DATASET=/DoubleEG/Run2016F-Nano25Oct2019-v1/NANOAOD
 
                 ProcessInt=125
 
         elif [ $process = 'Data_DoubleEGRunG' ]
         then
 
-                DATASET=
+                DATASET=/DoubleEG/Run2016G-Nano25Oct2019-v1/NANOAOD
 
                 ProcessInt=126
 
 	elif [ $process = 'Data_DoubleEGRunH' ]
         then
 
-                DATASET=
+                DATASET=/DoubleEG/Run2016H-Nano25Oct2019-v1/NANOAOD
 
                 ProcessInt=127
 
         elif [ $process = 'Data_DoubleMuonRunB' ]
         then
 
-                DATASET=
+                DATASET=/DoubleMuon/Run2016Bver2-Nano14Dec2018ver2-v1/NANOAOD
 
                 ProcessInt=128
 
         elif [ $process = 'Data_DoubleMuonRunC' ]
         then
 
-                DATASET=
+                DATASET=/DoubleMuon/Run2016C-Nano25Oct2019-v1/NANOAOD
 
                 ProcessInt=129
 
 	elif [ $process = 'Data_DoubleMuonRunD' ]
         then
 
-                DATASET=
+                DATASET=/DoubleMuon/Run2016D-Nano25Oct2019-v1/NANOAOD
 
                 ProcessInt=130
 
         elif [ $process = 'Data_DoubleMuonRunE' ]
         then
 
-                DATASET=
+                DATASET=/DoubleMuon/Run2016E-Nano25Oct2019-v1/NANOAOD
 
                 ProcessInt=131
 
         elif [ $process = 'Data_DoubleMuonRunF' ]
         then
 
-                DATASET=
+                DATASET=/DoubleMuon/Run2016F-Nano25Oct2019-v1/NANOAOD
 
                 ProcessInt=132
 
 	elif [ $process = 'Data_DoubleMuonRunG' ]
         then
 
-                DATASET=
+                DATASET=/DoubleMuon/Run2016G-Nano25Oct2019-v1/NANOAOD
 
                 ProcessInt=133
 
         elif [ $process = 'Data_DoubleMuonRunH' ]
         then
 
-                DATASET=
+                DATASET=/DoubleMuon/Run2016H-Nano25Oct2019-v1/NANOAOD
 
                 ProcessInt=134
 
         elif [ $process = 'Data_MuonEGRunB' ]
         then
 
-                DATASET=
+                DATASET=/MuonEG/Run2016B_ver2-Nano14Dec2018_ver2-v1/NANOAOD
 
                 ProcessInt=135
 
 	elif [ $process = 'Data_MuonEGRunC' ]
         then
 
-                DATASET=
+                DATASET=/MuonEG/Run2016C-Nano14Dec2018-v1/NANOAOD
 
                 ProcessInt=136
 
         elif [ $process = 'Data_MuonEGRunD' ]
         then
 
-                DATASET=
+                DATASET=/MuonEG/Run2016D-Nano14Dec2018-v1/NANOAOD
 
                 ProcessInt=137
 
         elif [ $process = 'Data_MuonEGRunE' ]
         then
 
-                DATASET=
+                DATASET=/MuonEG/Run2016E-Nano14Dec2018-v1/NANOAOD
 
                 ProcessInt=138
 
 	elif [ $process = 'Data_MuonEGRunF' ]
         then
 
-                DATASET=
+                DATASET=/MuonEG/Run2016F-Nano14Dec2018-v1/NANOAOD
 
                 ProcessInt=139
 
         elif [ $process = 'Data_MuonEGRunG' ]
         then
 
-                DATASET=
+                DATASET=/MuonEG/Run2016G-Nano14Dec2018-v1/NANOAOD
 
                 ProcessInt=140
 
         elif [ $process = 'Data_MuonEGRunH' ]
         then
 
-                DATASET=
+                DATASET=/MuonEG/Run2016H-Nano14Dec2018-v1/NANOAOD
 
                 ProcessInt=141
 
 	elif [ $process = 'Data_SingleMuonRunB' ]
         then
 
-                DATASET=
+                DATASET=/SingleMuon/Run2016Bver2-Nano25Oct2019ver2-v1/NANOAOD
 
                 ProcessInt=142
 
         elif [ $process = 'Data_SingleMuonRunC' ]
         then
 
-                DATASET=
+                DATASET=/SingleMuon/Run2016C-Nano25Oct2019-v1/NANOAOD
 
                 ProcessInt=143
 
         elif [ $process = 'Data_SingleMuonRunD' ]
         then
 
-                DATASET=
+                DATASET=/SingleMuon/Run2016D-Nano25Oct2019-v1/NANOAOD
 
                 ProcessInt=144
 
 	elif [ $process = 'Data_SingleMuonRunE' ]
         then
 
-                DATASET=
+                DATASET=/SingleMuon/Run2016E-Nano25Oct2019-v1/NANOAOD
 
                 ProcessInt=145
 
         elif [ $process = 'Data_SingleMuonRunF' ]
         then
 
-                DATASET=
+                DATASET=/SingleMuon/Run2016F-Nano25Oct2019-v1/NANOAOD
 
                 ProcessInt=146
 
         elif [ $process = 'Data_SingleMuonRunG' ]
         then
 
-                DATASET=
+                DATASET=/SingleMuon/Run2016G-Nano25Oct2019-v1/NANOAOD
 
                 ProcessInt=147
 
 	elif [ $process = 'Data_SingleMuonRunH' ]
         then
 
-                DATASET=
+                DATASET=/SingleMuon/Run2016H-Nano25Oct2019-v1/NANOAOD
 
                 ProcessInt=148
 
         elif [ $process = 'Data_SingleElectronRunB' ]
         then
 
-                DATASET=
+                DATASET=/SingleElectron/Run2016Bver2-Nano25Oct2019ver2-v1/NANOAOD
 
                 ProcessInt=149
 
         elif [ $process = 'Data_SingleElectronRunC' ]
         then
 
-                DATASET=
+                DATASET=/SingleElectron/Run2016C-Nano25Oct2019-v1/NANOAOD
 
                 ProcessInt=150
 
 	elif [ $process = 'Data_SingleElectronRunD' ]
         then
 
-                DATASET=
+                DATASET=/SingleElectron/Run2016D-Nano25Oct2019-v1/NANOAOD
 
                 ProcessInt=151
 
         elif [ $process = 'Data_SingleElectronRunE' ]
         then
 
-                DATASET=
+                DATASET=/SingleElectron/Run2016E-Nano25Oct2019-v1/NANOAOD
 
                 ProcessInt=152
 
         elif [ $process = 'Data_SingleElectronRunF' ]
         then
 
-                DATASET=
+                DATASET=/SingleElectron/Run2016F-Nano25Oct2019-v1/NANOAOD
 
                 ProcessInt=153
 
 	elif [ $process = 'Data_SingleElectronRunG' ]
         then
 
-                DATASET=
+                DATASET=/SingleElectron/Run2016G-Nano25Oct2019-v1/NANOAOD
 
                 ProcessInt=154
 
         elif [ $process = 'Data_SingleElectronRunH' ]
         then
 
-                DATASET=
+                DATASET=/SingleElectron/Run2016H-Nano25Oct2019-v1/NANOAOD
 
                 ProcessInt=155
-
-	elif [ $process = 'Data_EGRunB' ]
-        then
-
-                DATASET=
-
-                ProcessInt=156
-
-        elif [ $process = 'Data_EGRunC' ]
-        then
-
-                DATASET=
-
-                ProcessInt=157
-
-	elif [ $process = 'Data_EGRunD' ]
-        then
-
-                DATASET=
-
-                ProcessInt=158
 
 	else
 		echo 'Check the process name'
@@ -1434,6 +1413,182 @@ then
                 DATASET=/ttHToNonbb_M125_TuneCP5_13TeV-powheg-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_new_pmx_102X_mc2017_realistic_v8-v1/NANOAODSIM
 
                 ProcessInt=118
+
+	elif [ $process = 'Data_DoubleEGRunB' ]
+        then
+
+                DATASET=/DoubleEG/Run2017B-Nano14Dec2018-v1/NANOAOD
+
+                ProcessInt=121
+
+	elif [ $process = 'Data_DoubleEGRunC' ]
+        then
+
+                DATASET=/DoubleEG/Run2017C-Nano14Dec2018-v1/NANOAOD
+
+                ProcessInt=122
+
+	elif [ $process = 'Data_DoubleEGRunD' ]
+        then
+
+                DATASET=/DoubleEG/Run2017D-Nano14Dec2018-v1/NANOAOD
+
+                ProcessInt=123
+
+	elif [ $process = 'Data_DoubleEGRunE' ]
+        then
+
+                DATASET=/DoubleEG/Run2017E-Nano14Dec2018-v1/NANOAOD
+
+                ProcessInt=124
+
+        elif [ $process = 'Data_DoubleEGRunF' ]
+        then
+
+                DATASET=/DoubleEG/Run2017F-Nano14Dec2018-v1/NANOAOD
+
+                ProcessInt=125
+
+        elif [ $process = 'Data_DoubleMuonRunB' ]
+        then
+
+                DATASET=/DoubleMuon/Run2017B-Nano14Dec2018-v1/NANOAOD
+
+                ProcessInt=128
+
+        elif [ $process = 'Data_DoubleMuonRunC' ]
+        then
+
+                DATASET=/DoubleMuon/Run2017C-Nano14Dec2018-v1/NANOAOD
+
+                ProcessInt=129
+
+	elif [ $process = 'Data_DoubleMuonRunD' ]
+        then
+
+                DATASET=/DoubleMuon/Run2017D-Nano14Dec2018-v1/NANOAOD
+
+                ProcessInt=130
+
+        elif [ $process = 'Data_DoubleMuonRunE' ]
+        then
+
+                DATASET=/DoubleMuon/Run2017E-Nano14Dec2018-v1/NANOAOD
+
+                ProcessInt=131
+
+        elif [ $process = 'Data_DoubleMuonRunF' ]
+        then
+
+                DATASET=/DoubleMuon/Run2017F-Nano14Dec2018-v1/NANOAOD
+
+                ProcessInt=132
+
+        elif [ $process = 'Data_MuonEGRunB' ]
+        then
+
+                DATASET=/MuonEG/Run2017B-Nano14Dec2018-v1/NANOAOD
+
+                ProcessInt=135
+
+	elif [ $process = 'Data_MuonEGRunC' ]
+        then
+
+                DATASET=/MuonEG/Run2017C-Nano14Dec2018-v1/NANOAOD
+
+                ProcessInt=136
+
+        elif [ $process = 'Data_MuonEGRunD' ]
+        then
+
+                DATASET=/MuonEG/Run2017D-Nano14Dec2018-v1/NANOAOD
+
+                ProcessInt=137
+
+        elif [ $process = 'Data_MuonEGRunE' ]
+        then
+
+                DATASET=/MuonEG/Run2017E-Nano14Dec2018-v1/NANOAOD
+
+                ProcessInt=138
+
+	elif [ $process = 'Data_MuonEGRunF' ]
+        then
+
+                DATASET=/MuonEG/Run2017F-Nano14Dec2018-v1/NANOAOD
+
+                ProcessInt=139
+
+	elif [ $process = 'Data_SingleMuonRunB' ]
+        then
+
+                DATASET=/SingleMuon/Run2017B-Nano25Oct2019-v1/NANOAOD
+
+                ProcessInt=142
+
+        elif [ $process = 'Data_SingleMuonRunC' ]
+        then
+
+                DATASET=/SingleMuon/Run2017C-Nano25Oct2019-v1/NANOAOD
+
+                ProcessInt=143
+
+        elif [ $process = 'Data_SingleMuonRunD' ]
+        then
+
+                DATASET=/SingleMuon/Run2017D-Nano25Oct2019-v1/NANOAOD
+
+                ProcessInt=144
+
+	elif [ $process = 'Data_SingleMuonRunE' ]
+        then
+
+                DATASET=/SingleMuon/Run2017E-Nano25Oct2019-v1/NANOAOD
+
+                ProcessInt=145
+
+        elif [ $process = 'Data_SingleMuonRunF' ]
+        then
+
+                DATASET=/SingleMuon/Run2017F-Nano25Oct2019-v1/NANOAOD
+
+                ProcessInt=146
+
+        elif [ $process = 'Data_SingleElectronRunB' ]
+        then
+
+                DATASET=/SingleElectron/Run2017B-Nano25Oct2019-v1/NANOAOD
+
+                ProcessInt=149
+
+        elif [ $process = 'Data_SingleElectronRunC' ]
+        then
+
+                DATASET=/SingleElectron/Run2017C-Nano25Oct2019-v1/NANOAOD
+
+                ProcessInt=150
+
+	elif [ $process = 'Data_SingleElectronRunD' ]
+        then
+
+                DATASET=/SingleElectron/Run2017D-Nano25Oct2019-v1/NANOAOD
+
+                ProcessInt=151
+
+        elif [ $process = 'Data_SingleElectronRunE' ]
+        then
+
+                DATASET=/SingleElectron/Run2017E-Nano25Oct2019-v1/NANOAOD
+
+                ProcessInt=152
+
+        elif [ $process = 'Data_SingleElectronRunF' ]
+        then
+
+                DATASET=/SingleElectron/Run2017F-Nano25Oct2019-v1/NANOAOD
+
+                ProcessInt=153
+
 	else
                 echo 'Check the process name'
                 exit
@@ -1805,6 +1960,93 @@ then
                 DATASET=/ttHToNonbb_M125_TuneCP5_13TeV-powheg-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/NANOAODSIM
 
                 ProcessInt=118
+
+        elif [ $process = 'Data_DoubleMuonRunB' ]
+        then
+
+                DATASET=/DoubleMuon/Run2018B-Nano14Dec2018-v1/NANOAOD
+
+                ProcessInt=128
+
+        elif [ $process = 'Data_DoubleMuonRunC' ]
+        then
+
+                DATASET=/DoubleMuon/Run2018C-Nano14Dec2018-v1/NANOAOD
+
+                ProcessInt=129
+
+	elif [ $process = 'Data_DoubleMuonRunD' ]
+        then
+
+                DATASET=/DoubleMuon/Run2018D-Nano14Dec2018-v1/NANOAOD
+
+                ProcessInt=130
+
+        elif [ $process = 'Data_MuonEGRunB' ]
+        then
+
+                DATASET=/MuonEG/Run2018B-Nano14Dec2018-v1/NANOAOD
+
+                ProcessInt=135
+
+	elif [ $process = 'Data_MuonEGRunC' ]
+        then
+
+                DATASET=/MuonEG/Run2018C-Nano14Dec2018-v1/NANOAOD
+
+                ProcessInt=136
+
+        elif [ $process = 'Data_MuonEGRunD' ]
+        then
+
+                DATASET=/MuonEG/Run2018D-Nano14Dec2018-v1/NANOAOD
+
+                ProcessInt=137
+
+	elif [ $process = 'Data_SingleMuonRunB' ]
+        then
+
+                DATASET=/SingleMuon/Run2018B-Nano25Oct2019-v1/NANOAOD
+
+                ProcessInt=142
+
+        elif [ $process = 'Data_SingleMuonRunC' ]
+        then
+
+                DATASET=/SingleMuon/Run2018C-Nano25Oct2019-v1/NANOAOD
+
+                ProcessInt=143
+
+        elif [ $process = 'Data_SingleMuonRunD' ]
+        then
+
+                DATASET=/SingleMuon/Run2018D-Nano25Oct2019-v1/NANOAOD
+
+                ProcessInt=144
+
+	elif [ $process = 'Data_EGRunB' ]
+        then
+
+                DATASET=/EGamma/Run2018B-Nano25Oct2019-v1/NANOAOD
+
+                ProcessInt=156
+
+        elif [ $process = 'Data_EGRunC' ]
+        then
+
+                DATASET=/EGamma/Run2018C-Nano25Oct2019-v1/NANOAOD
+
+                ProcessInt=157
+
+	elif [ $process = 'Data_EGRunD' ]
+        then
+
+                DATASET=/EGamma/Run2018D-Nano25Oct2019-v1/NANOAOD
+
+                ProcessInt=158
+
+	else
+		echo 'Check the process'	
 
 	fi
 
