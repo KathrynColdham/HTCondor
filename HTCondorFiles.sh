@@ -86,18 +86,18 @@ then
 elif [ $systematic = 'BTag_ScaleDown' ]
 then
         SystematicInt=4
-elif [ $systematic = 'JEC_ScaleUp' ]
+elif [ $systematic = 'JetSmearing_ScaleUp' ]
 then
         SystematicInt=5
 
-elif [ $systematic = 'JEC_ScaleDown' ]
+elif [ $systematic = 'JetSmearing_ScaleDown' ]
 then
         SystematicInt=6
-elif [ $systematic = 'JetSmearing_ScaleUp' ]
+elif [ $systematic = 'JEC_ScaleUp' ]
 then
         SystematicInt=7
 
-elif [ $systematic = 'JetSmearing_ScaleDown' ]
+elif [ $systematic = 'JEC_ScaleDown' ]
 then
         SystematicInt=8
 elif [ $systematic = 'LeptonEfficiencies_ScaleUp' ]
@@ -164,9 +164,9 @@ fi
 #For if the job is for NPL or not
 if [ $NPL = 'NPL' ]
 then
-	NPLInt=0
-else
 	NPLInt=1
+else
+	NPLInt=0
 fi
 
 #getting dataset info from the CMS data aggregation service
@@ -826,6 +826,272 @@ then
                 ProcessInt=120
 
 
+	elif [ $process = 'Data_DoubleEGRunB' ]
+        then
+
+                DATASET=
+
+                ProcessInt=121
+
+	elif [ $process = 'Data_DoubleEGRunC' ]
+        then
+
+                DATASET=
+
+                ProcessInt=122
+
+	elif [ $process = 'Data_DoubleEGRunD' ]
+        then
+
+                DATASET=
+
+                ProcessInt=123
+
+	elif [ $process = 'Data_DoubleEGRunE' ]
+        then
+
+                DATASET=
+
+                ProcessInt=124
+
+        elif [ $process = 'Data_DoubleEGRunF' ]
+        then
+
+                DATASET=
+
+                ProcessInt=125
+
+        elif [ $process = 'Data_DoubleEGRunG' ]
+        then
+
+                DATASET=
+
+                ProcessInt=126
+
+	elif [ $process = 'Data_DoubleEGRunH' ]
+        then
+
+                DATASET=
+
+                ProcessInt=127
+
+        elif [ $process = 'Data_DoubleMuonRunB' ]
+        then
+
+                DATASET=
+
+                ProcessInt=128
+
+        elif [ $process = 'Data_DoubleMuonRunC' ]
+        then
+
+                DATASET=
+
+                ProcessInt=129
+
+	elif [ $process = 'Data_DoubleMuonRunD' ]
+        then
+
+                DATASET=
+
+                ProcessInt=130
+
+        elif [ $process = 'Data_DoubleMuonRunE' ]
+        then
+
+                DATASET=
+
+                ProcessInt=131
+
+        elif [ $process = 'Data_DoubleMuonRunF' ]
+        then
+
+                DATASET=
+
+                ProcessInt=132
+
+	elif [ $process = 'Data_DoubleMuonRunG' ]
+        then
+
+                DATASET=
+
+                ProcessInt=133
+
+        elif [ $process = 'Data_DoubleMuonRunH' ]
+        then
+
+                DATASET=
+
+                ProcessInt=134
+
+        elif [ $process = 'Data_MuonEGRunB' ]
+        then
+
+                DATASET=
+
+                ProcessInt=135
+
+	elif [ $process = 'Data_MuonEGRunC' ]
+        then
+
+                DATASET=
+
+                ProcessInt=136
+
+        elif [ $process = 'Data_MuonEGRunD' ]
+        then
+
+                DATASET=
+
+                ProcessInt=137
+
+        elif [ $process = 'Data_MuonEGRunE' ]
+        then
+
+                DATASET=
+
+                ProcessInt=138
+
+	elif [ $process = 'Data_MuonEGRunF' ]
+        then
+
+                DATASET=
+
+                ProcessInt=139
+
+        elif [ $process = 'Data_MuonEGRunG' ]
+        then
+
+                DATASET=
+
+                ProcessInt=140
+
+        elif [ $process = 'Data_MuonEGRunH' ]
+        then
+
+                DATASET=
+
+                ProcessInt=141
+
+	elif [ $process = 'Data_SingleMuonRunB' ]
+        then
+
+                DATASET=
+
+                ProcessInt=142
+
+        elif [ $process = 'Data_SingleMuonRunC' ]
+        then
+
+                DATASET=
+
+                ProcessInt=143
+
+        elif [ $process = 'Data_SingleMuonRunD' ]
+        then
+
+                DATASET=
+
+                ProcessInt=144
+
+	elif [ $process = 'Data_SingleMuonRunE' ]
+        then
+
+                DATASET=
+
+                ProcessInt=145
+
+        elif [ $process = 'Data_SingleMuonRunF' ]
+        then
+
+                DATASET=
+
+                ProcessInt=146
+
+        elif [ $process = 'Data_SingleMuonRunG' ]
+        then
+
+                DATASET=
+
+                ProcessInt=147
+
+	elif [ $process = 'Data_SingleMuonRunH' ]
+        then
+
+                DATASET=
+
+                ProcessInt=148
+
+        elif [ $process = 'Data_SingleElectronRunB' ]
+        then
+
+                DATASET=
+
+                ProcessInt=149
+
+        elif [ $process = 'Data_SingleElectronRunC' ]
+        then
+
+                DATASET=
+
+                ProcessInt=150
+
+	elif [ $process = 'Data_SingleElectronRunD' ]
+        then
+
+                DATASET=
+
+                ProcessInt=151
+
+        elif [ $process = 'Data_SingleElectronRunE' ]
+        then
+
+                DATASET=
+
+                ProcessInt=152
+
+        elif [ $process = 'Data_SingleElectronRunF' ]
+        then
+
+                DATASET=
+
+                ProcessInt=153
+
+	elif [ $process = 'Data_SingleElectronRunG' ]
+        then
+
+                DATASET=
+
+                ProcessInt=154
+
+        elif [ $process = 'Data_SingleElectronRunH' ]
+        then
+
+                DATASET=
+
+                ProcessInt=155
+
+	elif [ $process = 'Data_EGRunB' ]
+        then
+
+                DATASET=
+
+                ProcessInt=156
+
+        elif [ $process = 'Data_EGRunC' ]
+        then
+
+                DATASET=
+
+                ProcessInt=157
+
+	elif [ $process = 'Data_EGRunD' ]
+        then
+
+                DATASET=
+
+                ProcessInt=158
+
 	else
 		echo 'Check the process name'
 		exit
@@ -1173,7 +1439,7 @@ then
                 exit
         fi
 
-elif [ $year = '2017' ]
+elif [ $year = '2018' ]
 then
 	if [ $process = 'tZq' ]
         then
@@ -1550,9 +1816,11 @@ fi
 
 
 #writing the names of all input files to a text file
-dasgoclient -query="file dataset=$DATASET" > ${process}_files_${year}.txt
+if [ ! -f ${process}_files_${year}.txt ]
+then 
+	dasgoclient -query="file dataset=$DATASET" > ${process}_files_${year}.txt
+fi
 
-echo ${process}_files_${year}.txt
 
 
 #creating a bash script for the condor submission
@@ -1572,11 +1840,15 @@ fi
 
 cd /afs/cern.ch/work/c/coldham/private/HTCondor/tZq_Dilepton_NanoAOD
 pwd
-ls -al
-ls -lR bin
 source /cvmfs/sft.cern.ch/lcg/views/LCG_96/x86_64-slc6-gcc8-opt/setup.sh
-make clean
-make 
+
+if [ ! -d "/afs/cern.ch/work/c/coldham/private/HTCondor/tZq_Dilepton_NanoAOD/bin" ]
+then
+	echo "recompiling"
+	make clean
+	make
+fi
+ 
 ./bin/fulleventselectionMain.exe --mc ${MCInt} -y ${year} -p ${ProcessInt} --npl ${NPLInt} --sr ${SRInt} --sbr ${SBRInt} --zjcr ${ZPlusJetsCRInt} --ttcr ${ttbarCRInt} --sys ${SystematicInt} --channel ${ChannelInt} --dcc 0
 
 EOT
@@ -1591,10 +1863,13 @@ arguments = $(Proxy_path) $Fp(filename) $(ClusterID) $(ProcId)
 output = $Fp(filename)file.stdout
 error = $Fp(filename)file.stderr
 log = $Fp(filename)file.log
-+JobFlavour = "nextweek"
++MaxRuntime = 2592000
 EOT
 
 cat <<EOT >> condor_${process}_${channel}_${year}_${region}_${systematic}_${MCOrData}_${NPL}.sub
 queue filename matching (Jobs/Job_${process}_${channel}_${year}_${region}_${systematic}_${MCOrData}_${NPL}/*.sh)
 EOT
 
+
+#submitting the condor job
+condor_submit /afs/cern.ch/work/c/coldham/private/HTCondor/condor_${process}_${channel}_${year}_${region}_${systematic}_${MCOrData}_${NPL}.sub
