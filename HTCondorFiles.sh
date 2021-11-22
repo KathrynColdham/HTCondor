@@ -2047,7 +2047,7 @@ then
 
 	else
 		echo 'Check the process'	
-
+		exit
 	fi
 
 else
