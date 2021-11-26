@@ -18,15 +18,21 @@ SystematicNamesArray=("Nominal"                       "PU_ScaleUp"              
                       "fsr_ScaleDown")
 
 
+YearArray=("2016" "2017" "2018")
+
+RegionArray=("SBR" "SR" "ttbarCR" "ZPlusJetsCR" "NoChi2Cut")
+
+ChannelArray=("ee" "mumu")
+
 for i in ${!ProcessNamesArray[@]}; do
-	for j in ${!SystematicNamesArray[@]}; do
+        for j in ${!SystematicNamesArray[@]}; do
+                for k in ${!YearArray[@]}; do
+                        for l in ${!ChannelArray[@]}; do
 
-		./HTCondorFiles.sh ${ProcessNamesArray[i]} ee 2016 NoChi2Cut ${SystematicNamesArray[j]} MC NotNPL
-        	./HTCondorFiles.sh ${ProcessNamesArray[i]} mumu 2016 NoChi2Cut ${SystematicNamesArray[j]} MC NotNPL
-		./HTCondorFiles.sh ${ProcessNamesArray[i]} ee 2017 NoChi2Cut ${SystematicNamesArray[j]} MC NotNPL
-		./HTCondorFiles.sh ${ProcessNamesArray[i]} mumu 2017 NoChi2Cut ${SystematicNamesArray[j]} MC NotNPL
-		./HTCondorFiles.sh ${ProcessNamesArray[i]} ee 2018 NoChi2Cut ${SystematicNamesArray[j]} MC NotNPL
-        	./HTCondorFiles.sh ${ProcessNamesArray[i]} mumu 2018 NoChi2Cut ${SystematicNamesArray[j]} MC NotNPL
+                                ./HTCondorFiles.sh ${ProcessNamesArray[i]} ${ChannelArray[l]} ${YearArray[k]} NoChi2Cut ${SystematicNamesArray[j]} MC NotNPL
+                                ./HTCondorFiles.sh ${ProcessNamesArray[i]} ${ChannelArray[l]} ${YearArray[k]} ZPlusJetsCR ${SystematicNamesArray[j]} MC NotNPL
 
-	done
+                        done
+                done
+        done
 done

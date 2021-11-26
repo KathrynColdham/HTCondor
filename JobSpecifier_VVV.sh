@@ -23,6 +23,7 @@ for i in ${!ProcessNamesArray[@]}; do
 			for l in ${!ChannelArray[@]}; do
 
 				./HTCondorFiles.sh ${ProcessNamesArray[i]} ${ChannelArray[l]} ${YearArray[k]} NoChi2Cut ${SystematicNamesArray[j]} MC NotNPL
+				./HTCondorFiles.sh ${ProcessNamesArray[i]} ${ChannelArray[l]} ${YearArray[k]} ZPlusJetsCR ${SystematicNamesArray[j]} MC NotNPL
 
 			done
 		done

@@ -1,17 +1,12 @@
 #!/bin/bash
 
-ProcessNamesArray=("ttbarV_ttWJetsToLNu"                "ttbarV_ttWJetsToLNu_ext"
-                   "ttbarV_ttWJetsToQQ"                 "ttbarV_ttZToLL"                        "ttbarV_ttZToLL_ext"
-                   "ttbarV_ttZToLLNuNu"                 "ttbarV_ttZToLLNuNu_ext"                "ttbarV_ttZToLLNuNu_ext2"
-                   "ttbarV_ttZToQQ"                     "ttbarV_ttZToQQ_ext"                    "ttbarV_ttHTobb"
-                   "ttbarV_ttHTobb_ext"                 "ttbarV_ttHToNonbb") 
+ProcessNamesArray=("tZq_scaleup" "tZq_scaledown")
 
-
-SystematicNamesArray=("Nominal"                       "PU_ScaleUp"             "PU_ScaleDown"           "BTag_ScaleUp"              "BTag_ScaleDown"
+SystematicNamesArray=("Nominal"                       "PU_ScaleUp"              "PU_ScaleDown"           "BTag_ScaleUp"              "BTag_ScaleDown"
                       "JetSmearing_ScaleUp"           "JetSmearing_ScaleDown"   "JEC_ScaleUp"            "JEC_ScaleDown"             "LeptonEfficiencies_ScaleUp"
                       "LeptonEfficiencies_ScaleDown"  "PDF_ScaleUp"             "PDF_ScaleDown"          "ME_ScaleUp"                "ME_ScaleDown"
                       "MET_ScaleUp"                   "MET_ScaleDown"           "isr_ScaleUp"            "isr_ScaleDown"             "fsr_ScaleUp"
-                      "fsr_ScaleDown") 
+                      "fsr_ScaleDown")
 
 YearArray=("2016" "2017" "2018")
 

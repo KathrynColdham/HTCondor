@@ -58,6 +58,9 @@ elif [ $region = 'ZPlusJetsCR' ]
 then
         SBRInt=0
         SRInt=0
+	ttbarCRInt=0
+        ZPlusJetsCRInt=1
+
 elif [ $region = 'NoChi2Cut' ]
 then
         SBRInt=0
@@ -2047,7 +2050,7 @@ then
 
 	else
 		echo 'Check the process'	
-		exit
+		exit		
 	fi
 
 else
@@ -2069,7 +2072,7 @@ fi
 mkdir -p Jobs/Job_${process}_${channel}_${year}_${region}_${systematic}_${MCOrData}_${NPL}
 
 #writing the commands to be executed in each bash script
-cat <<EOT >> Jobs/Job_${process}_${channel}_${year}_${region}_${systematic}_${MCOrData}_${NPL}/sub.sh 
+cat <<EOT >> /afs/cern.ch/work/c/coldham/private/HTCondor/Jobs/Job_${process}_${channel}_${year}_${region}_${systematic}_${MCOrData}_${NPL}/sub.sh 
 #!/bin/bash
 export X509_USER_PROXY=/afs/cern.ch/work/c/coldham/private/HTCondor/x509up_u114218
 voms-proxy-info -all
@@ -2098,7 +2101,7 @@ EOT
 
 
 #creating and writing to the .sub file
-cat <<"EOT" >> condor_${process}_${channel}_${year}_${region}_${systematic}_${MCOrData}_${NPL}.sub
+cat <<"EOT" >> /afs/cern.ch/work/c/coldham/private/HTCondor/condor_${process}_${channel}_${year}_${region}_${systematic}_${MCOrData}_${NPL}.sub
 executable = $(filename) 
 Proxy_path = /afs/cern.ch/work/c/coldham/private/HTCondor/x509up_u114218
 arguments = $(Proxy_path) $Fp(filename) $(ClusterID) $(ProcId)
@@ -2108,8 +2111,8 @@ log = $Fp(filename)file.log
 +MaxRuntime = 2592000
 EOT
 
-cat <<EOT >> condor_${process}_${channel}_${year}_${region}_${systematic}_${MCOrData}_${NPL}.sub
-queue filename matching (Jobs/Job_${process}_${channel}_${year}_${region}_${systematic}_${MCOrData}_${NPL}/*.sh)
+cat <<EOT >> /afs/cern.ch/work/c/coldham/private/HTCondor/condor_${process}_${channel}_${year}_${region}_${systematic}_${MCOrData}_${NPL}.sub
+queue filename matching (/afs/cern.ch/work/c/coldham/private/HTCondor/Jobs/Job_${process}_${channel}_${year}_${region}_${systematic}_${MCOrData}_${NPL}/*.sh)
 EOT
 
 
