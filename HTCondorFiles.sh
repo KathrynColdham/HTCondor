@@ -728,111 +728,111 @@ then
 
                 DATASET=/WWW_4F_TuneCUETP8M1_13TeV-amcatnlo-pythia8/RunIISummer16NanoAODv7-PUMoriond17_Nano02Apr2020_102X_mcRun2_asymptotic_v8-v1/NANOAODSIM
 
-                ProcessInt=98
+                ProcessInt=96
 
         elif [ $process = 'VVV_WWZTo4F' ]
         then
 
                 DATASET=/WWZ_TuneCUETP8M1_13TeV-amcatnlo-pythia8/RunIISummer16NanoAODv7-PUMoriond17_Nano02Apr2020_102X_mcRun2_asymptotic_v8-v1/NANOAODSIM
 
-                ProcessInt=100
+                ProcessInt=98
 
         elif [ $process = 'VVV_WZZ' ]
         then
 
                 DATASET=/WZZ_TuneCUETP8M1_13TeV-amcatnlo-pythia8/RunIISummer16NanoAODv7-PUMoriond17_Nano02Apr2020_102X_mcRun2_asymptotic_v8-v1/NANOAODSIM
 
-                ProcessInt=102
+                ProcessInt=100
 
         elif [ $process = 'VVV_ZZZ' ]
         then
 
                 DATASET=/ZZZ_TuneCUETP8M1_13TeV-amcatnlo-pythia8/RunIISummer16NanoAODv7-PUMoriond17_Nano02Apr2020_102X_mcRun2_asymptotic_v8-v1/NANOAODSIM
 
-                ProcessInt=104
+                ProcessInt=102
 
 	elif [ $process = 'WPlusJets' ]
         then
 
                 DATASET=/WJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16NanoAODv7-PUMoriond17_Nano02Apr2020_102X_mcRun2_asymptotic_v8-v1/NANOAODSIM
 
-                ProcessInt=106
+                ProcessInt=104
 
         elif [ $process = 'WPlusJets_ext' ]
         then
 
                 DATASET=/WJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16NanoAODv7-PUMoriond17_Nano02Apr2020_102X_mcRun2_asymptotic_v8_ext2-v1/NANOAODSIM
 
-                ProcessInt=107
+                ProcessInt=105
 
         elif [ $process = 'ttbarV_ttWJetsToLNu' ]
         then
 
                 DATASET=/TTWJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-madspin-pythia8/RunIISummer16NanoAODv7-PUMoriond17_Nano02Apr2020_102X_mcRun2_asymptotic_v8_ext1-v1/NANOAODSIM
 
-                ProcessInt=108
+                ProcessInt=106
 
         elif [ $process = 'ttbarV_ttWJetsToLNu_ext' ]
         then
 
                 DATASET=/TTWJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-madspin-pythia8/RunIISummer16NanoAODv7-PUMoriond17_Nano02Apr2020_102X_mcRun2_asymptotic_v8_ext2-v1/NANOAODSIM
 
-                ProcessInt=109
+                ProcessInt=107
 
 	elif [ $process = 'ttbarV_ttWJetsToQQ' ]
         then
 
                 DATASET=/TTWJetsToQQ_TuneCUETP8M1_13TeV-amcatnloFXFX-madspin-pythia8/RunIISummer16NanoAODv7-PUMoriond17_Nano02Apr2020_102X_mcRun2_asymptotic_v8-v1/NANOAODSIM
 
-                ProcessInt=110
+                ProcessInt=108
 
         elif [ $process = 'ttbarV_ttZToLLNuNu' ]
         then
 
                 DATASET=/TTZToLLNuNu_M-10_TuneCUETP8M1_13TeV-amcatnlo-pythia8/RunIISummer16NanoAODv7-PUMoriond17_Nano02Apr2020_102X_mcRun2_asymptotic_v8_ext1-v1/NANOAODSIM
 
-                ProcessInt=113
+                ProcessInt=111
 
         elif [ $process = 'ttbarV_ttZToLLNuNu_ext' ]
         then
 
                 DATASET=/TTZToLLNuNu_M-10_TuneCUETP8M1_13TeV-amcatnlo-pythia8/RunIISummer16NanoAODv7-PUMoriond17_Nano02Apr2020_102X_mcRun2_asymptotic_v8_ext2-v1/NANOAODSIM
 
-                ProcessInt=114
+                ProcessInt=112
 
         elif [ $process = 'ttbarV_ttZToLLNuNu_ext2' ]
         then
 
                 DATASET=/TTZToLLNuNu_M-10_TuneCUETP8M1_13TeV-amcatnlo-pythia8/RunIISummer16NanoAODv7-PUMoriond17_Nano02Apr2020_102X_mcRun2_asymptotic_v8_ext3-v1/NANOAODSIM
 
-                ProcessInt=115
+                ProcessInt=113
 
 	elif [ $process = 'ttbarV_ttZToQQ' ]
         then
 
                 DATASET=/TTZToQQ_TuneCUETP8M1_13TeV-amcatnlo-pythia8/RunIISummer16NanoAODv7-PUMoriond17_Nano02Apr2020_102X_mcRun2_asymptotic_v8-v1/NANOAODSIM
 
-                ProcessInt=116
+                ProcessInt=114
 	
 	elif [ $process = 'ttbarV_ttHTobb' ]
         then
 
                 DATASET=/ttHTobb_M125_TuneCUETP8M2_ttHtranche3_13TeV-powheg-pythia8/RunIISummer16NanoAODv7-PUMoriond17_Nano02Apr2020_102X_mcRun2_asymptotic_v8-v1/NANOAODSIM
 
-                ProcessInt=118
+                ProcessInt=116
 
 	elif [ $process = 'ttbarV_ttHToNonbb' ]
         then
         
                 DATASET=/ttHToNonbb_M125_TuneCUETP8M2_ttHtranche3_13TeV-powheg-pythia8/RunIISummer16NanoAODv7-PUMoriond17_Nano02Apr2020_102X_mcRun2_asymptotic_v8-v1/NANOAODSIM 
 
-                ProcessInt=120
+                ProcessInt=118
 
 
 	elif [ $process = 'Data_DoubleEGRunB' ]
         then
 
-                DATASET=/DoubleEG/Run2016B-22Aug2018ver2-v1/NANOAOD
+                DATASET=/DoubleEG/Run2016B_ver2-Nano25Oct2019_ver2-v1/NANOAOD
 
                 ProcessInt=121
 
@@ -881,7 +881,7 @@ then
         elif [ $process = 'Data_DoubleMuonRunB' ]
         then
 
-                DATASET=/DoubleMuon/Run2016Bver2-Nano14Dec2018ver2-v1/NANOAOD
+                DATASET=/DoubleMuon/Run2016B_ver2-Nano25Oct2019_ver2-v1/NANOAOD
 
                 ProcessInt=128
 
@@ -979,7 +979,7 @@ then
 	elif [ $process = 'Data_SingleMuonRunB' ]
         then
 
-                DATASET=/SingleMuon/Run2016Bver2-Nano25Oct2019ver2-v1/NANOAOD
+                DATASET=/SingleMuon/Run2016B_ver2-Nano25Oct2019_ver2-v1/NANOAOD
 
                 ProcessInt=142
 
@@ -1028,7 +1028,7 @@ then
         elif [ $process = 'Data_SingleElectronRunB' ]
         then
 
-                DATASET=/SingleElectron/Run2016Bver2-Nano25Oct2019ver2-v1/NANOAOD
+                DATASET=/SingleElectron/Run2016B_ver2-Nano25Oct2019_ver2-v1/NANOAOD
 
                 ProcessInt=149
 
@@ -1119,9 +1119,9 @@ then
 
         elif [ $process = 'ttbar_atMCaNLO' ]
         then
-                DATASET=35
+                ProcessInt=35
 
-                ProcessInt=/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_new_pmx_102X_mc2017_realistic_v8-v1/NANOAODSIM
+                DATASET=/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIIFall17NanoAODv7-PU2017_12Apr2018_Nano02Apr2020_new_pmx_102X_mc2017_realistic_v8-v1/NANOAODSIM
 
 	elif [ $process = 'SingleTop_tchannel_top' ]
         then
@@ -1476,7 +1476,7 @@ then
         elif [ $process = 'Data_DoubleMuonRunE' ]
         then
 
-                DATASET=/DoubleMuon/Run2017E-Nano14Dec2018-v1/NANOAOD
+                DATASET=/DoubleMuon/Run2017E-Nano1June2019-v1/NANOAOD
 
                 ProcessInt=131
 
@@ -1981,7 +1981,7 @@ then
 	elif [ $process = 'Data_DoubleMuonRunD' ]
         then
 
-                DATASET=/DoubleMuon/Run2018D-Nano14Dec2018-v1/NANOAOD
+                DATASET=/DoubleMuon/Run2018D-Nano25Oct2019_ver2-v1/NANOAOD
 
                 ProcessInt=130
 
@@ -2002,7 +2002,7 @@ then
         elif [ $process = 'Data_MuonEGRunD' ]
         then
 
-                DATASET=/MuonEG/Run2018D-Nano14Dec2018-v1/NANOAOD
+                DATASET=/MuonEG/Run2018D-Nano25Oct2019_ver2-v1/NANOAOD
 
                 ProcessInt=137
 
@@ -2101,14 +2101,14 @@ EOT
 
 
 #creating and writing to the .sub file
-cat <<"EOT" >> /afs/cern.ch/work/c/coldham/private/HTCondor/condor_${process}_${channel}_${year}_${region}_${systematic}_${MCOrData}_${NPL}.sub
+cat <<"EOT" > /afs/cern.ch/work/c/coldham/private/HTCondor/condor_${process}_${channel}_${year}_${region}_${systematic}_${MCOrData}_${NPL}.sub
 executable = $(filename) 
 Proxy_path = /afs/cern.ch/work/c/coldham/private/HTCondor/x509up_u114218
 arguments = $(Proxy_path) $Fp(filename) $(ClusterID) $(ProcId)
 output = $Fp(filename)file.stdout
 error = $Fp(filename)file.stderr
 log = $Fp(filename)file.log
-+MaxRuntime = 2592000
++MaxRuntime = 2419200
 EOT
 
 cat <<EOT >> /afs/cern.ch/work/c/coldham/private/HTCondor/condor_${process}_${channel}_${year}_${region}_${systematic}_${MCOrData}_${NPL}.sub
